@@ -1,0 +1,85 @@
+:root {
+  --color-first: #e8c1a4;
+  --color-second: #83cdd8;
+  --color-third: #31536e;
+
+  --title: "Lobster", cursive;
+  --text: "Nunito", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  transition: all 0.5s ease-in-out;
+  font-weight: lighter;
+  font-family: var(--text);
+}
+
+h1 {
+  font-family: var(--title);
+  color: var(--color-first);
+  font-size: 3rem;
+  /* background-color: var(--color-third);
+  position: absolute;
+  top: 12%;
+  left: -10%;
+  z-index: 3;
+  padding: 1rem;
+  
+  border-radius: 50px; */
+}
+
+/* h1::before {
+  content: "";
+  background-image: url(/background-pattern.png);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 10rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 5%;
+  height: 100%;
+  border-radius: 50px;
+} */
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-second);
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--color-second);
+}
+
+li {
+  list-style: none;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+}
