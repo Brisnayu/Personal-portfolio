@@ -4,3 +4,8 @@
   top: 3%;
   z-index: 2;
 }
+
+.container-links nav ul {
+  display: flex;
+  gap: 2rem;
+}

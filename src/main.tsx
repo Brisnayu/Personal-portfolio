@@ -10,7 +10,7 @@ import App from "./App.tsx";
 // const Projects = lazy(() => import ("./pages/Projects.ts"));
 
 import Home from "./pages/Home/Home.tsx";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/Projects.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

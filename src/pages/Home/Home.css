@@ -13,7 +13,7 @@
 }
 
 .container-image ul {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     gap: 10px;
     bottom: 5px;
@@ -28,7 +28,9 @@
   width: 70%;
   height: 100%;
   background-color: var(--color-third);
-  position: relative;
+  display: flex;
+  gap: 2rem;
+  /* position: relative; */
 }
 
 .container-text::before {
@@ -55,15 +57,19 @@
 }
 
 .container-text > div {
-  position: absolute;
-  bottom: 5rem;
-  left: 3rem;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-text > div ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .container-text > div li {
