@@ -3,6 +3,12 @@
   --color-second: #83cdd8;
   --color-third: #31536e;
 
+  --color-background: #3e4655;
+  --color-elements: #2B2E35;
+  --color-contrast: #E88997;
+
+  --color-text: white;
+
   --title: "Lobster", cursive;
   --text: "Nunito", sans-serif;
 }
@@ -53,13 +59,17 @@ h1 {
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--color-second);
+  color: var(--color-contrast);
 }
 
 h3 {
   font-size: 2.2rem;
   font-weight: bold;
   color: var(--color-second);
+}
+
+p {
+ color: var(--color-text);
 }
 
 li {
@@ -71,8 +81,8 @@ header {
   align-items: center;
   padding: 0 3rem;
   width: 100%;
-  height: 10vh;
-  background-color: var(--color-second);
+  height: 8vh;
+  background-color: var(--color-elements);
 }
 
 .flex-center {
@@ -90,5 +100,11 @@ header {
 }
 
 main {
-  height: 90vh;
+  min-height: 92vh;
+  background-color: var(--color-background);
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }

@@ -1,8 +1,8 @@
 .style-card {
   box-sizing: border-box;
-  width: 20rem;
-  height: 25rem;
-  background: rgba(217, 217, 217, 0.58);
+  width: 25rem;
+  height: 35rem;
+  background: var(--color-elements);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
@@ -13,10 +13,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 1rem;
   user-select: none;
   font-weight: bolder;
   color: black;
+  padding: 1rem;
 }
 
 .style-card:hover {
@@ -26,4 +28,17 @@
 
 .style-card:active {
   transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.style-card > img {
+  width: 20rem;
+  height: 15rem;
+  /* border: 1px solid red; */
+  object-fit: cover;
+  border-radius: 17px;
+  margin-top: 1rem;
+}
+
+.style-card {
+  text-align: left;
 }

@@ -11,7 +11,13 @@ const Projects = () => {
         <button>2</button>
       </div>
 
-      <div>
+      <div className="container-projects">
+        <CardProjects />
+        <CardProjects />
+        <CardProjects />
+
+        <CardProjects />
+        <CardProjects />
         <CardProjects />
       </div>
       
