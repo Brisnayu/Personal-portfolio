@@ -4,8 +4,8 @@
   --color-third: #31536e;
 
   --color-background: #3e4655;
-  --color-elements: #2B2E35;
-  --color-contrast: #E88997;
+  --color-elements: #2b2e35;
+  --color-contrast: #e88997;
 
   --color-text: white;
 
@@ -63,26 +63,36 @@ h2 {
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--color-second);
+  text-align: center;
 }
 
 p {
- color: var(--color-text);
+  color: var(--color-text);
 }
 
 li {
   list-style: none;
 }
 
+.active {
+  font-weight: 900;
+  color: var(--color-contrast);
+  border-bottom: 3px solid var(--color-contrast);
+}
+
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 3rem;
   width: 100%;
   height: 8vh;
   background-color: var(--color-elements);
+  position: fixed;
+  z-index: 2;
 }
 
 .flex-center {
@@ -102,9 +112,9 @@ header {
 main {
   min-height: 92vh;
   background-color: var(--color-background);
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.8rem;
 }

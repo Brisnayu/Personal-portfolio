@@ -1,5 +1,5 @@
 .title-page {
   font-family: var(--title);
-  color: var(--color-third);
-  font-size: 3.5rem;
+  color: var(--color-contrast);
+  font-size: 2rem;
 }

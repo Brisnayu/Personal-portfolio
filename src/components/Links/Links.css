@@ -1,11 +1,9 @@
 .container-links {
-  position: fixed;
-  right: 5%;
-  top: 3%;
-  z-index: 2;
+  color: var(--color-second);
 }
 
 .container-links nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
+

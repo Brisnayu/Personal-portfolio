@@ -7,7 +7,10 @@ const Links = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/">Home 🏠</NavLink>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/skills">Skills</NavLink>
           </li>
           <li>
             <NavLink to="/projects">Projects</NavLink>

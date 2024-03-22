@@ -1,0 +1,16 @@
+.button-filter {
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+  padding: 0.4rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-text);
+  background-color: transparent;
+  border: none;
+}
+
+.clicked {
+  color: var(--color-contrast);
+  scale: 1.1;
+  border-bottom: 3px solid var(--color-contrast);
+}
