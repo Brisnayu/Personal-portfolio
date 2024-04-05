@@ -2,6 +2,7 @@ import ButtonFilter from "../../components/ButtonFilter/ButtonFilter";
 import CardProjects from "../../components/CardProjects/CardProjects";
 import { filterProjects } from "../../information/filterProjects";
 import { v4 as uuidv4 } from "uuid";
+import { projectsData } from "../../utils/projects-data.tsx";
 import "./Projects.css";
 
 const Projects = () => {
@@ -21,13 +22,17 @@ const Projects = () => {
       </div>
 
       <div className="container-projects">
-        <CardProjects />
-        <CardProjects />
-        <CardProjects />
-
-        <CardProjects />
-        <CardProjects />
-        <CardProjects />
+        {projectsData.map((project) => (
+          <CardProjects
+            img={project.img}
+            alt={project.goal}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            github={project.github}
+            key={uuidv4()}
+          />
+        ))}
       </div>
     </main>
   );
