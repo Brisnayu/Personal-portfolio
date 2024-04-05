@@ -12,3 +12,38 @@
   font-family: var(--title);
   color: var(--color-text);
 }
+
+.container-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.button-type {
+  background-color: var(--color-third);
+  /* border: none; */
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 6rem;
+  border-radius: 1rem;
+  color: var(--color-contrastd);
+  box-shadow: 0 0.2rem var(--color-second);
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.button-type:active {
+  color: var(--color-background);
+  box-shadow: 0 0.2rem var(--color-background);
+  transform: translateY(0.4rem);
+}
+
+.button-type:hover:not(:disabled) {
+  background: var(--color-contrast);
+  color: var(--color-elements);
+  font-weight: bold;
+  /* text-shadow: 0 0.1rem var(--color-text); */
+}
+
+.selectedButton {
+  background-color: red;
+}

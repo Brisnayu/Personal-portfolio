@@ -1,14 +1,14 @@
 .style-card {
   box-sizing: border-box;
   width: 25rem;
-  height: 35rem;
+  height: 45rem;
   background: var(--color-elements);
-  border: 1px solid white;
+  /* border: 3px solid var(--color-text); */
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
   text-align: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.5s;
   display: flex;
   align-items: center;
@@ -22,18 +22,18 @@
 }
 
 .style-card:hover {
-  border: 1px solid black;
-  transform: scale(1.01);
+  border: 1px solid var(--color-contrast);
+  scale: 1.05;
 }
 
-.style-card:active {
+/* .style-card:active {
   transform: scale(0.95) rotateZ(1.7deg);
-}
+} */
 
 .style-card > img {
   width: 20rem;
   height: 15rem;
-  /* border: 1px solid red; */
+  border: 2px solid var(--color-second);
   object-fit: cover;
   border-radius: 17px;
   margin-top: 1rem;
@@ -41,4 +41,29 @@
 
 .style-card {
   text-align: left;
+}
+
+.style-links {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+.style-links a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.style-links a:hover {
+  scale: 1.1;
+}
+
+.style-links img {
+  width: 2rem;
+  height: 2rem;
 }
