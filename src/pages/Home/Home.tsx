@@ -11,6 +11,7 @@ const Home = () => {
           creativity. Explore my portfolio to see how I turn ideas into
           impactful experiences.
         </p>
+
       </div>
       <div className="container-image flex-center">
         <img

@@ -9,6 +9,12 @@
 
   --color-text: white;
 
+  --color-phone: #31827c;
+  --color-email: #95c68f;
+  --color-linkedin: #0A66C2;
+  --color-ubication: #fc8a80;
+  --color-github: #fd4e6d;
+
   --title: "Lobster", cursive;
   --text: "Nunito", sans-serif;
 }
@@ -110,11 +116,20 @@ header {
 }
 
 main {
-  min-height: 92vh;
+  min-height: 90vh;
   background-color: var(--color-background);
   padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.8rem;
+}
+
+footer {
+  min-height: 10vh;
+  background-color: var(--color-elements);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
