@@ -13,3 +13,7 @@
   background-color: var(--color-contrast);
   border-radius: 100%;
 }
+
+.container-skills > img {
+  width: 5rem;
+}

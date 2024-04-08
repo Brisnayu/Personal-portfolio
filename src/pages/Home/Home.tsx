@@ -12,6 +12,13 @@ const Home = () => {
           impactful experiences.
         </p>
 
+        <div className="container-skills">
+          <h2>Skills</h2>
+          <img src="/techs/HTML5.png" alt="icon html5" />
+          <img src="/techs/CSS3.png" alt="icon css3" />
+          <img src="/techs/JS.png" alt="icon JavaScript" />
+        </div>
+
       </div>
       <div className="container-image flex-center">
         <img
