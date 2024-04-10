@@ -17,6 +17,12 @@ const Home = () => {
           <img src="/techs/HTML5.png" alt="icon html5" />
           <img src="/techs/CSS3.png" alt="icon css3" />
           <img src="/techs/JS.png" alt="icon JavaScript" />
+          <img src="/techs/TYPESCRIPT.png" alt="icon TypeScript" />
+          <img src="/techs/REACT.png" alt="icon React" />
+          <img src="/techs/NODEJS.png" alt="icon Node.js" />
+          <img src="/techs/EXPRESSJS.png" alt="icon Express.js" />
+          <img src="/techs/MONGODB1.png" alt="icon MongoDB" />
+          <img src="/techs/NoSQL.png" alt="icon NoSQL" />
         </div>
 
       </div>
