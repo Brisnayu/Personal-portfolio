@@ -1,3 +1,5 @@
+import { techsData } from "../../utils/techs-data";
+import { v4 as uuidv4 } from "uuid";
 import "./Home.css";
 
 const Home = () => {
@@ -14,17 +16,12 @@ const Home = () => {
 
         <div className="container-skills">
           <h2>Skills</h2>
-          <img src="/techs/HTML5.png" alt="icon html5" />
-          <img src="/techs/CSS3.png" alt="icon css3" />
-          <img src="/techs/JS.png" alt="icon JavaScript" />
-          <img src="/techs/TYPESCRIPT.png" alt="icon TypeScript" />
-          <img src="/techs/REACT.png" alt="icon React" />
-          <img src="/techs/NODEJS.png" alt="icon Node.js" />
-          <img src="/techs/EXPRESSJS.png" alt="icon Express.js" />
-          <img src="/techs/MONGODB1.png" alt="icon MongoDB" />
-          <img src="/techs/NoSQL.png" alt="icon NoSQL" />
+          {techsData.map((tech) => (
+            <div key={uuidv4()}>
+              <img src={tech.photo} alt={tech.alt} />
+            </div>
+          ))}
         </div>
-
       </div>
       <div className="container-image flex-center">
         <img

@@ -14,6 +14,20 @@
   border-radius: 100%;
 }
 
-.container-skills > img {
+.container-skills {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-skills > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-skills div > img {
   width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  border-radius: 10px;
 }
