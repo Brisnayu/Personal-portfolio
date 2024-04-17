@@ -1,0 +1,9 @@
+.container-cards {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 5rem;
+}
+
+.container-socialMedia {
+  width: 100%;
+}

@@ -31,7 +31,7 @@ const CardProjects = ({
 
         <a href={github} target="_blank" title={github}>
           <img src="/links/github.png" alt="github" />
-          <p>Check it out</p>
+          <p>Check the code</p>
         </a>
       </div>
     </div>

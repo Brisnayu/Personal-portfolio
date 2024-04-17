@@ -1,6 +1,7 @@
 export const contentSkills = [
   "HTML5",
-  "CSS",
+  "CSS3",
+  "styled-components",
   "JavaScript",
   "TypeScript",
   "React",
@@ -12,3 +13,9 @@ export const contentSkills = [
   "Postman",
   "Spanish/English",
 ];
+
+export const skillsInProgress = [
+  "Angular",
+  "Python",
+  "Figma"
+]

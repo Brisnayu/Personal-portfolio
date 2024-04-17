@@ -1,3 +1,6 @@
+import CardInformation from "../../components/CardInformation/CardInformation";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
+import { aspirationsData, motivationData, valuesData } from "../../utils/aboutMe-data";
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -39,6 +42,29 @@ const AboutMe = () => {
           out to discuss how I can contribute to your next endeavor! Thank you
           for visiting my portfolio!
         </p>
+      </div>
+
+      <div className="container-cards">
+        <CardInformation
+          title="Motivation"
+          subtitle="Motivation"
+          content={motivationData}
+        />
+        <CardInformation
+          title="Aspirations"
+          subtitle="Aspirations"
+          content={aspirationsData}
+        />
+        <CardInformation
+          title="Values"
+          subtitle="Values"
+          content={valuesData}
+        />
+      </div>
+
+      <div className="container-socialMedia">
+        <h2>Let's Connect</h2>
+        <SocialMedia />
       </div>
     </main>
   );
