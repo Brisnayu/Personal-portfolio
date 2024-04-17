@@ -16,11 +16,11 @@ const Home = () => {
 
         <div className="container-skills">
           <h2>Skills</h2>
-          {techsData.map((tech) => (
-            <div key={uuidv4()}>
-              <img src={tech.photo} alt={tech.alt} />
-            </div>
-          ))}
+          <div>
+            {techsData.map((tech) => (
+              <img key={uuidv4()} src={tech.photo} alt={tech.alt} />
+            ))}
+          </div>
         </div>
       </div>
       <div className="container-image flex-center">

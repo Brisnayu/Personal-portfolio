@@ -1,6 +1,8 @@
 .container-text {
   /* border: 1px solid red; */
   width: 50%;
+  display: flex;
+  gap: 1rem;
 }
 
 .container-image {
@@ -15,9 +17,10 @@
 }
 
 .container-skills {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container-skills > div {
@@ -25,9 +28,10 @@
   flex-direction: row;
 }
 
-.container-skills div > img {
+.container-skills img {
   width: 5rem;
   height: 5rem;
   object-fit: contain;
   border-radius: 10px;
+  padding: 0 0.5rem;
 }

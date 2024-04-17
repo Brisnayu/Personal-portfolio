@@ -12,6 +12,7 @@ import App from "./App.tsx";
 import Home from "./pages/Home/Home.tsx";
 import Projects from "./pages/Projects/Projects.tsx";
 import Skills from "./pages/Skills/Skills.tsx";
+import AboutMe from "./pages/AboutMe/AboutMe.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route index element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/aboutme" element={<AboutMe />} />
         </Route>
       </Routes>
     </BrowserRouter>
