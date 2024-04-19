@@ -1,9 +1,20 @@
 import CardInformation from "../../components/CardInformation/CardInformation";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
-import { aspirationsData, motivationData, valuesData } from "../../utils/aboutMe-data";
+import {
+  aspirationsData,
+  linkGithub,
+  linkLinkedin,
+  motivationData,
+  proGithub,
+  proLinkedin,
+  valuesData,
+} from "../../utils/aboutMe-data";
 import "./AboutMe.css";
 
 const AboutMe = () => {
+
+  const {link, image, alt} = linkLinkedin;
+
   return (
     <main>
       <h2>About me</h2>
@@ -64,7 +75,18 @@ const AboutMe = () => {
 
       <div className="container-socialMedia">
         <h2>Let's Connect</h2>
-        <SocialMedia />
+        <SocialMedia
+          list={proLinkedin}
+          link={link}
+          image={image}
+          alt={alt}
+        />
+        <SocialMedia
+          list={proGithub}
+          link={linkGithub.link}
+          image={linkGithub.image}
+          alt={linkGithub.alt}
+        />
       </div>
     </main>
   );

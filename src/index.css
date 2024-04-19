@@ -11,7 +11,7 @@
 
   --color-phone: #31827c;
   --color-email: #95c68f;
-  --color-linkedin: #0A66C2;
+  --color-linkedin: #0a66c2;
   --color-ubication: #fc8a80;
   --color-github: #fd4e6d;
 
@@ -132,4 +132,24 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-contrast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  background-color: var(--color-elements);
 }

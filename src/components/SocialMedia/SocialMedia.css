@@ -33,6 +33,13 @@
 .container-principal > ul > li {
   display: flex;
   align-items: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.container-principal > ul img {
+  width: 5%;
 }
 
 .container-link img {
