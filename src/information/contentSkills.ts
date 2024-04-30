@@ -16,6 +16,7 @@ export const contentSkills = [
 
 export const skillsInProgress = [
   "Angular",
+  "Astro",
   "Python",
   "Figma"
 ]

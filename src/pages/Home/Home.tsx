@@ -29,12 +29,6 @@ const Home = () => {
           src="https://res.cloudinary.com/dx8j6h1rb/image/upload/v1698489629/avatars/Captura_de_pantalla_2023-10-28_123954_rqc8tw.png"
           alt="avatar image"
         />
-        {/* <ul>
-          <li><img src="/icons/email.png" alt="icon email" /></li>
-          <li><img src="/icons/linkedin.png" alt="icon email" /></li>
-          <li><img src="/icons/phone.png" alt="icon email" /></li>
-          <li><img src="/icons/ubication.png" alt="icon email" /></li>
-        </ul> */}
       </div>
     </main>
   );

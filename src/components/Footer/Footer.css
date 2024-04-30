@@ -1,4 +1,9 @@
 span {
   color: var(--color-contrast);
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+span:hover {
+  color: var(--color-second);
+  font-size: 18px;
 }
