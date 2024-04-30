@@ -1,3 +1,7 @@
+.container-text-principal {
+  text-align: justify;
+}
+
 .container-cards {
   /* border: 1px solid red; */
   display: flex;
@@ -6,4 +10,12 @@
 
 .container-socialMedia {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container-socialMedia > div:hover {
+  transform: scale(1.02);
+  border: 1px solid var(--color-text)
 }

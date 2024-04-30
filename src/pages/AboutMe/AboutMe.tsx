@@ -12,13 +12,12 @@ import {
 import "./AboutMe.css";
 
 const AboutMe = () => {
-
-  const {link, image, alt} = linkLinkedin;
+  const { link, image, alt } = linkLinkedin;
 
   return (
     <main>
       <h2>About me</h2>
-      <div>
+      <div className="container-text-principal">
         <p>
           Hello! I'm Brisna, a passionate Full Stack Developer with a love for
           design. Since January 2023, I've fully immersed myself in the world of
@@ -76,12 +75,14 @@ const AboutMe = () => {
       <div className="container-socialMedia">
         <h2>Let's Connect</h2>
         <SocialMedia
+          title="LinkedIn"
           list={proLinkedin}
           link={link}
           image={image}
           alt={alt}
         />
         <SocialMedia
+          title="GitHub"
           list={proGithub}
           link={linkGithub.link}
           image={linkGithub.image}

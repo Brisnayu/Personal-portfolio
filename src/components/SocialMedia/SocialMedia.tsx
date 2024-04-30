@@ -1,17 +1,18 @@
 import "./SocialMedia.css";
 
 interface SocialMediaProps {
+  title: string;
   list: string[];
   link: string;
   image: string;
   alt: string;
 }
 
-const SocialMedia = ({ list, link, image, alt }: SocialMediaProps) => {
+const SocialMedia = ({ title, list, link, image, alt }: SocialMediaProps) => {
   return (
     <div className="container-SocialMedia">
       <div className="container-principal">
-        <h3>LinkedIn</h3>
+        <h3>{title}</h3>
         <ul>
           {list.map((item) => (
             <li>
