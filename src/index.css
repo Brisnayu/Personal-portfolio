@@ -45,6 +45,19 @@ h1 {
   border-radius: 50px; */
 }
 
+.light {
+  --color-first: #DC9253;
+  --color-second: black;
+  --color-third: #E6C7C2;
+
+  --color-background: whitesmoke;
+  --color-elements: #CC8178;
+  --color-contrast: black;
+
+  --color-text: black;
+  --color-github: rgb(199, 199, 199);
+}
+
 /* h1::before {
   content: "";
   background-image: url(/background-pattern.png);

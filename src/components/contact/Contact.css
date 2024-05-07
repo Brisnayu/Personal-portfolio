@@ -80,3 +80,7 @@
     opacity: 1;
   }
 }
+
+.light .socialImg {
+  filter: none;
+}

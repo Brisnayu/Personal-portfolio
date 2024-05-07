@@ -1,4 +1,5 @@
 import "./SocialMedia.css";
+import { v4 as uuidv4 } from "uuid";
 
 interface SocialMediaProps {
   title: string;
@@ -15,7 +16,7 @@ const SocialMedia = ({ title, list, link, image, alt }: SocialMediaProps) => {
         <h3>{title}</h3>
         <ul>
           {list.map((item) => (
-            <li>
+            <li key={uuidv4()}>
               <img src="/aboutMe/point.png" alt="icon point" />
               {item}
             </li>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import CardInformation from "../../components/CardInformation/CardInformation";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import {
@@ -13,6 +14,22 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   const { link, image, alt } = linkLinkedin;
+  const [light, setLight] = useState<boolean>(false);
+  // Cada vez que cambio de página, se está ejecutando esta función!
+  // Corregir  para evitar el doble click!
+
+  console.log(light);
+
+  const hancleChangeStyle = () => {
+    setLight(!light);
+
+    if(light === false) {
+      document.documentElement.classList.add("light");
+    } else {
+      document.documentElement.classList.remove("light");
+    }
+    
+  };
 
   return (
     <main>
@@ -73,12 +90,13 @@ const AboutMe = () => {
             Thank you for visiting my portfolio!
           </p>
         </div>
-        <a href="https://www.instagram.com/mini_hera_/" target="_blank"><img
-          className="image-cat"
-          src="/aboutMe/hera.png"
-          alt="photo my cat Hera"
-        /></a>
-        
+        <a href="https://www.instagram.com/mini_hera_/" target="_blank">
+          <img
+            className="image-cat"
+            src="/aboutMe/hera.png"
+            alt="photo my cat Hera"
+          />
+        </a>
       </div>
 
       <div className="container-socialMedia">
@@ -97,6 +115,15 @@ const AboutMe = () => {
           image={linkGithub.image}
           alt={linkGithub.alt}
         />
+      </div>
+
+      <div>
+        <p>
+          By the way, if you've made it this far, I must confess that I
+          generally prefer the 'light mode' over the 'dark mode,' so feel free
+          to use this button to make the switch!
+        </p>
+        <button onClick={hancleChangeStyle}>CLICK ME!</button>
       </div>
     </main>
   );
