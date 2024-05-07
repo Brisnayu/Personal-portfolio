@@ -1,9 +1,15 @@
 .container-text-principal {
   text-align: justify;
+  font-size: 1.1rem;
+/* border: 1px solid red;  */
+}
+
+.container-text-principal > p > span {
+  font-size: 3rem;
+  font-family: var(--title);
 }
 
 .container-cards {
-  /* border: 1px solid red; */
   display: flex;
   gap: 5rem;
 }
