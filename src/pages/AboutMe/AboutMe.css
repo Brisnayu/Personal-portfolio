@@ -21,10 +21,10 @@
   gap: 1.5rem;
 }
 
-.container-socialMedia > div:hover {
+/* .container-socialMedia > div:hover {
   transform: scale(1.02);
   border: 1px solid var(--color-text)
-}
+} */
 
 .image-cat {
   width: 20%;

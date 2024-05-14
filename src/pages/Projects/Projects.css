@@ -47,3 +47,31 @@
 .selectedButton {
   background-color: red;
 }
+
+#select-tech {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: var(--color-elements);
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  color: var(--color-text);
+  opacity: 0.7;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#select-tech > option {
+  font-weight: bold;
+}
+
+#select-tech:focus {
+  background-color: var(--color-text);
+  opacity: 1;
+  color: var(--color-elements);
+  font-weight: bold;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 90px #969696,
+             0px 0px 100px var(--color-contrast);
+}

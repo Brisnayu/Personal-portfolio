@@ -1,39 +1,35 @@
-import ButtonFilter from "../../components/ButtonFilter/ButtonFilter";
+// import ButtonFilter from "../../components/ButtonFilter/ButtonFilter";
 import CardProjects from "../../components/CardProjects/CardProjects";
 import { filterProjects } from "../../information/filterProjects";
 import { v4 as uuidv4 } from "uuid";
 import { projectsData } from "../../utils/projects-data.tsx";
 import "./Projects.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Projects = () => {
   const [pintArray, setPintArray] = useState(projectsData);
   const [currentTech, setCurrentTech] = useState<string>();
   // const [selectedButton, setSelectedButton] = useState<string>();
 
-  useEffect(() => {
-    if (currentTech) {
-      changedProjects();
-    }
-  }, [currentTech]);
+  // useEffect(() => {
+  //   if (currentTech) {
+  //     changedProjects();
+  //   }
+  // }, [currentTech]);
 
-  const changedProjects = () => {
-    console.log("HOLA! Desde Projects");
-    console.log("ESTA ES LA TECNOLOGÍA", currentTech);
+  const changedProjects =  (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedTech = event.target.value;
+    setCurrentTech(selectedTech);
 
-    if (currentTech === "ALL") {
-      return setPintArray(projectsData);
-    }
-
-    if (currentTech !== undefined) {
+    if (selectedTech === "ALL") {
+      setPintArray(projectsData);
+    } else {
       const filteredProjects = projectsData.filter((project) =>
-        project.tech.includes(currentTech)
+        project.tech.includes(selectedTech)
       );
-
-      // console.log(filteredProjects)
-
       setPintArray(filteredProjects);
     }
+    
   };
 
   const changedProjectsFront = () => {
@@ -61,13 +57,14 @@ const Projects = () => {
       </div>
 
       <div>
-        {filterProjects.map((tech) => (
-          <ButtonFilter
-            title={tech}
-            key={uuidv4()}
-            onClick={() => setCurrentTech(tech)}
-          />
-        ))}
+        <select id="select-tech" onChange={changedProjects} value={currentTech}>
+          <option value="" disabled>
+            Filter by technology
+          </option>
+          {filterProjects.map((tech) => (
+            <option value={tech} key={uuidv4()}>{tech}</option>
+          ))}
+        </select>
       </div>
 
       <div className="container-buttons">
@@ -78,8 +75,6 @@ const Projects = () => {
           Back-end
         </button>
       </div>
-
-      <h1>{currentTech}</h1>
 
       <div className="container-projects">
         {pintArray.map((project) => (
