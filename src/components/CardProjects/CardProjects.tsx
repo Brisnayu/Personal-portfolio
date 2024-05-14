@@ -1,3 +1,5 @@
+import { techsData } from "../../utils/techs-data";
+import { v4 as uuidv4 } from "uuid";
 import "./CardProjects.css";
 
 interface CardProjectProps {
@@ -5,6 +7,7 @@ interface CardProjectProps {
   alt: string;
   title: string;
   description: string;
+  tech: string[];
   link?: string;
   github: string;
 }
@@ -14,6 +17,7 @@ const CardProjects = ({
   alt,
   title,
   description,
+  tech,
   link,
   github,
 }: CardProjectProps) => {
@@ -21,7 +25,16 @@ const CardProjects = ({
     <div className="style-card">
       <img src={img} alt={alt} />
       <h2>{title}</h2>
+
+      <div className="container-card-tech">
+        {tech.map((el) => (
+          <img src={techsData[el]} alt={`Icon ${el}`} key={uuidv4()} />
+        ))}
+      </div>
+
       <p>{description}</p>
+
+
 
       <div className="style-links">
         <a href={link} target="_blank" title={link}>

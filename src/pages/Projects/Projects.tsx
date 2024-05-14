@@ -83,6 +83,7 @@ const Projects = () => {
             alt={project.goal}
             title={project.title}
             description={project.description}
+            tech={project.tech}
             link={project.link}
             github={project.github}
             key={uuidv4()}

@@ -1,4 +1,4 @@
-import { techsData } from "../../utils/techs-data";
+import { techsDataHome } from "../../utils/techs-data";
 import { v4 as uuidv4 } from "uuid";
 import "./Home.css";
 
@@ -17,7 +17,7 @@ const Home = () => {
         <div className="container-skills">
           <h2>Skills</h2>
           <div>
-            {techsData.map((tech) => (
+            {techsDataHome.map((tech) => (
               <img key={uuidv4()} src={tech.photo} alt={tech.alt} />
             ))}
           </div>
