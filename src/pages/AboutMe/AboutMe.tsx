@@ -86,7 +86,7 @@ const AboutMe = () => {
       </div>
 
       <div className="container-socialMedia">
-        <h2>Let's connect</h2>
+        <h2>Let's connect:</h2>
         <SocialMedia
           title="LinkedIn"
           list={proLinkedin}

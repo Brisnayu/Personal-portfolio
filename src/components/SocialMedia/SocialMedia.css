@@ -35,6 +35,13 @@
   gap: 1rem;
 }
 
+.container-principal > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
 .container-principal > ul > li {
   display: flex;
   align-items: flex-start;
@@ -44,7 +51,7 @@
 }
 
 .container-principal > ul img {
-  width: 5%;
+  width: 15px;
 }
 
 .container-link img {

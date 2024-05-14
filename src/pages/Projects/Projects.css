@@ -47,9 +47,14 @@
   /* text-shadow: 0 0.1rem var(--color-text); */
 }
 
-.selectedButton {
-  background-color: red;
+.light .button-type:hover:not(:disabled) {
+  background-color: var(--color-github);
+  color: var(--color-contrast);
 }
+
+/* .selectedButton {
+  background-color: red;
+} */
 
 #select-tech {
   border: none;
@@ -77,4 +82,10 @@
   transform: scale(1.05);
   box-shadow: 13px 13px 90px #969696,
              0px 0px 100px var(--color-contrast);
+}
+
+.light #select-tech:focus {
+  background-color: var(--color-elements);
+  opacity: 0.7;
+  color: var(--color-second)
 }

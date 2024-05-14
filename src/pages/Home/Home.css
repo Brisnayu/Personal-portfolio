@@ -39,3 +39,7 @@
 .container-skills img:hover {
   transform: scale(1.2);
 }
+
+.light .container-image img {
+  background-color: var(--color-elements);
+}

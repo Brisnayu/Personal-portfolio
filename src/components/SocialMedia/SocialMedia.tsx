@@ -34,23 +34,3 @@ const SocialMedia = ({ title, list, link, image, alt }: SocialMediaProps) => {
 };
 
 export default SocialMedia;
-
-{
-  /* <div className="container-SocialMedia">
-<div className="container-principal">
-  <h3>LinkedIn</h3>
-  <ul>
-    <li><img src="/aboutMe/point.png" alt="icon point" />Contenido dinámico</li>
-    <li><img src="/aboutMe/point.png" alt="icon point" />Publicación de proyectos</li>
-    <li><img src="/aboutMe/point.png" alt="icon point" />Trayectoria profesional</li>
-    <li><img src="/aboutMe/point.png" alt="icon point" />logros profesionales</li>
-  </ul>
-</div>
-
-<div className="container-link">
-  <a href="https://www.linkedin.com/in/brisna-a-paez-m-283934154/" target="_blank">
-    <img src="/aboutMe/profileLinkedin.png" alt="icon profile linkedin" />
-  </a>
-</div>
-</div> */
-}

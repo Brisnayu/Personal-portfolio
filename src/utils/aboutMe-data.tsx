@@ -22,10 +22,10 @@ export const valuesData = [
 ];
 
 export const proLinkedin = [
-  "Contenido dinámico",
-  "Publicación de proyectos",
-  "Trayectoria profesional",
-  "Logros profesionales",
+  "Professional profile completeness.",
+  "Colleague endorsements.",
+  "Active participation in groups and communities.",
+  "Regular postings with engaging content.",
 ];
 
 export const linkLinkedin = {
@@ -35,10 +35,9 @@ export const linkLinkedin = {
 };
 
 export const proGithub = [
-  "Contenido dinámico",
-  "Publicación de proyectos",
-  "Trayectoria profesional",
-  "Logros profesionales",
+  "Well-organized repositories.",
+  "Contributions to open-source projects.",
+  "Highlighted personal projects.",
 ];
 
 export const linkGithub = {
