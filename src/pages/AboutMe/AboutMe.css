@@ -1,7 +1,7 @@
 .container-text-principal {
   text-align: justify;
   font-size: 1.1rem;
-/* border: 1px solid red;  */
+  /* border: 1px solid red;  */
 }
 
 .container-text-principal > p > span {
@@ -31,5 +31,33 @@
   border-radius: 100%;
   background-color: var(--color-third);
   border: 5px solid var(--color-third);
-  /* box-shadow: 2px 20px red ; */
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.image-cat:hover {
+  box-shadow: 0px 0px 102px -22px var(--color-contrast);
+}
+
+.container-hera {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-hera > p {
+  width: 200%;
+}
+
+.container-hera div {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-hera div a {
+  display: flex;
+  justify-content: center;
 }

@@ -75,9 +75,9 @@
 }
 
 #select-tech:focus {
-  background-color: var(--color-text);
+  background-color: var(--color-third);
   opacity: 1;
-  color: var(--color-elements);
+  color: var(--color-text);
   font-weight: bold;
   transform: scale(1.05);
   box-shadow: 13px 13px 90px #969696,

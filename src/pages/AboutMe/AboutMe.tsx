@@ -39,6 +39,24 @@ const AboutMe = () => {
           perseverance, anything is possible, and I'm committed to continuously
           challenging myself.
         </p>
+        <div className="container-hera">
+          <p>
+            When I'm not engrossed in professional projects, I enjoy spending
+            time with my cat Hera and exploring outdoor activities. To me,
+            maintaining a balance between work and personal life is essential
+            for nurturing creativity and fostering overall well-being.
+          </p>
+          <div>
+            <a href="https://www.instagram.com/mini_hera_/" target="_blank">
+              <img
+                className="image-cat"
+                src="/aboutMe/hera.png"
+                alt="photo my cat Hera"
+              />
+            </a>
+            <p>Click on the image</p>
+          </div>
+        </div>
       </div>
 
       <div className="container-cards">
@@ -62,26 +80,11 @@ const AboutMe = () => {
       <div className="container-text-principal">
         <div>
           <p>
-            When I'm not engrossed in professional projects, I enjoy spending
-            time with my cat Hera and exploring outdoor activities. To me,
-            maintaining a balance between work and personal life is essential
-            for nurturing creativity and fostering overall well-being.
-          </p>
-          <p>
             I'm excited to share my work and eager to collaborate on future
             projects filled with excitement and challenge. Don't hesitate to
             reach out to discuss how I can contribute to your next endeavor!
             Thank you for visiting my portfolio!
           </p>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/mini_hera_/" target="_blank">
-            <img
-              className="image-cat"
-              src="/aboutMe/hera.png"
-              alt="photo my cat Hera"
-            />
-          </a>
         </div>
       </div>
 
