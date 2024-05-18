@@ -43,3 +43,13 @@
 .light .container-image img {
   background-color: var(--color-elements);
 }
+
+@media (300px <= width <= 768px) {
+  .container-skills {
+    display: none;
+  }
+
+  .container-text {
+    width: 85%;
+  }
+}

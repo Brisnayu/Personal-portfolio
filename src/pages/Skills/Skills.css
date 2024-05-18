@@ -1,5 +1,4 @@
-.container-skills {
-  /* border: 1px solid yellow; */
+.container-page-skills {
   width: 100%;
   display: flex;
   gap: 2rem;
@@ -44,4 +43,19 @@
 
 .card-skill > img {
   width: 15%;
+}
+
+@media (300px <= width <= 768px) {
+  .container-page-skills {
+    flex-direction: column;
+    padding: 0 0.8rem;
+  }
+
+  .card-skill {
+    font-size: 1.1rem;
+  }
+
+  .card-skill > img {
+    width: 10%;
+  }
 }

@@ -89,6 +89,7 @@ h3 {
 
 p {
   color: var(--color-text);
+  text-align: center;
 }
 
 li {
@@ -164,4 +165,32 @@ footer {
 
 ::-webkit-scrollbar-button {
   background-color: var(--color-elements);
+}
+
+@media (300px <= width <= 768px) {
+  main {
+    padding: 40% 0 10% 0;
+  }
+  .flex-center {
+    flex-direction: column;
+  }
+
+  header {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 15px;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+  }
 }

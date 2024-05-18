@@ -5,7 +5,7 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <main>
-      <div className="container-skills">
+      <div className="container-page-skills">
         <h3>Skills</h3>
         <ul className="card-skills">
           {contentSkills.map((skill) => (
@@ -16,7 +16,7 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-      <div className="container-skills">
+      <div className="container-page-skills">
         <h3>Skills in Progress</h3>
         <ul className="card-skills">
           {skillsInProgress.map((skill) => (

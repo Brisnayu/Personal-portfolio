@@ -3,3 +3,9 @@
   color: var(--color-contrast);
   font-size: 2rem;
 }
+
+@media (300px <= width <= 768px) {
+  .title-page {
+    font-size: 1.3rem;
+  }
+}

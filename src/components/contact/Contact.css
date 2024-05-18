@@ -84,3 +84,13 @@
 .light .socialImg {
   filter: none;
 }
+
+@media (300px <= width <= 768px) {
+  .card-principal {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .card {
+    flex-wrap: wrap;
+  }
+}
