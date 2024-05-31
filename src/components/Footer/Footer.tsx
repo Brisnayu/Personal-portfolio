@@ -1,5 +1,5 @@
 import "./Footer.css";
-import Contact from "../Contact/Contact";
+import Contact from "../Contact/Contact.js";
 
 const Footer = () => {
   return (
