@@ -59,3 +59,13 @@
   height: auto;
   border-radius: 5px;
 }
+
+@media (300px <= width <= 1134px) {
+  .container-SocialMedia {
+    flex-direction: column;
+  }
+
+  .container-link img {
+    width: 15rem;
+  }
+}

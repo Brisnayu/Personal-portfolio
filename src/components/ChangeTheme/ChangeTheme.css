@@ -58,3 +58,9 @@ button:hover::after {
 .button-theme:hover {
   box-shadow: inset 0px 0px 25px var(--color-second);
 }
+
+@media (300px <= width <= 1000px) {
+  .container-theme {
+    flex-direction: column;
+  }
+}

@@ -1,6 +1,7 @@
 .container-page-skills {
   width: 100%;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -12,8 +13,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .card-skill {
@@ -45,17 +46,16 @@
   width: 15%;
 }
 
-@media (300px <= width <= 768px) {
+@media (300px <= width <= 500px) {
   .container-page-skills {
-    flex-direction: column;
-    padding: 0 0.8rem;
+    margin-top: 5rem;
   }
 
-  .card-skill {
+  /* .card-skill {
     font-size: 1.1rem;
   }
 
   .card-skill > img {
     width: 10%;
-  }
+  } */
 }

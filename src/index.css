@@ -169,7 +169,7 @@ footer {
 
 @media (300px <= width <= 768px) {
   main {
-    padding: 40% 0 10% 0;
+    padding: 14% 10px 10% 10px;
   }
   .flex-center {
     flex-direction: column;

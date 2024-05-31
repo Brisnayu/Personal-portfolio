@@ -90,8 +90,14 @@
   color: var(--color-second)
 }
 
-@media (300px <= width <= 768px) {
+@media (300px <= width <= 1000px) {
   .container-projects {
     justify-items: center;
+  }
+}
+
+@media (300px <= width <= 590px) {
+  .container-title-projects {
+    margin-top: 5rem;
   }
 }

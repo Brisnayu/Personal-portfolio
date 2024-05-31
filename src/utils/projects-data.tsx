@@ -151,4 +151,26 @@ export const projectsData = [
     github: "https://github.com/Brisnayu/MERN7",
     type: "backend",
   },
+  {
+    img: "https://res.cloudinary.com/dx8j6h1rb/image/upload/v1717183774/Imagenes%20Porfolio/IMAGEN_FRONTEND_CHALLENGE_arat1n.png",
+    title: "Frontend Challenge",
+    goal: "Layout Challenge",
+    description:
+      "The project includes a top menu, a striking header, informative sections, expansion panels, a contact form with a map, and dark and light modes. The design is responsive and adaptable to mobile devices. Although it took longer than expected, it was an enriching experience and reflects my colorful and cheerful style, including adorable cat photos.",
+    tech: ["TypeScript", "HTML5", "CSS"],
+    link: "https://pt-maquetacion-brisna-paez.netlify.app/",
+    github: "https://github.com/Brisnayu/PT-Maquetacion",
+    type: "frontend",
+  },
+  {
+    img: "https://res.cloudinary.com/dx8j6h1rb/image/upload/v1717183851/Imagenes%20Porfolio/New_portfolio_react_dmpfns.png",
+    title: "New Portfolio",
+    goal: "Portfolio with React",
+    description:
+      "I aimed to create a new portfolio featuring a fresh color scheme and placing emphasis on the most compelling aspect—the code. This portfolio highlights my significant progress and improvements, showcasing both my technical skills and design sensibilities. It combines an attractive, modern design with clear, well-structured code, reflecting my dedication to both aesthetics and functionality.",
+    tech: ["TypeScript", "HTML5", "CSS", "JavaScript"],
+    link: "https://pt-maquetacion-brisna-paez.netlify.app/",
+    github: "https://github.com/Brisnayu/Personal-portfolio",
+    type: "frontend",
+  },
 ];

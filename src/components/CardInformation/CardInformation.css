@@ -87,3 +87,14 @@
     var(--color-third) 100%
   );
 }
+
+@media (300px <= width <= 768px) {
+  .card-information-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* .card-information{
+    color: blue
+  } */
+}
