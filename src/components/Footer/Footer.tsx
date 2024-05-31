@@ -1,10 +1,8 @@
 import "./Footer.css";
-import Contact from "../Contact/Contact.js";
 
 const Footer = () => {
   return (
     <footer>
-      <Contact />
       <p>
         Created with love by{" "}
         <span>
