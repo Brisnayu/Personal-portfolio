@@ -5,10 +5,12 @@ import { v4 as uuidv4 } from "uuid";
 import { projectsData } from "../../utils/projects-data.tsx";
 import "./Projects.css";
 import { useState } from "react";
+import Loading from "../../components/Loading/Loading.tsx";
 
 const Projects = () => {
   const [pintArray, setPintArray] = useState(projectsData);
   const [currentTech, setCurrentTech] = useState<string>();
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   // const [selectedButton, setSelectedButton] = useState<string>();
 
   // useEffect(() => {
@@ -17,34 +19,44 @@ const Projects = () => {
   //   }
   // }, [currentTech]);
 
-  const changedProjects =  (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const changedProjects = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedTech = event.target.value;
     setCurrentTech(selectedTech);
+    setIsLoading(true);
 
-    if (selectedTech === "ALL") {
-      setPintArray(projectsData);
-    } else {
-      const filteredProjects = projectsData.filter((project) =>
-        project.tech.includes(selectedTech)
-      );
-      setPintArray(filteredProjects);
-    }
-    
+    setTimeout(() => {
+      if (selectedTech === "ALL") {
+        setPintArray(projectsData);
+      } else {
+        const filteredProjects = projectsData.filter((project) =>
+          project.tech.includes(selectedTech)
+        );
+        setPintArray(filteredProjects);
+      }
+      setIsLoading(false);
+    }, 500);
   };
 
   const changedProjectsFront = () => {
-    const filteredProjects = projectsData.filter(
-      (project) => project.type === "frontend"
-    );
-    setPintArray(filteredProjects);
-    // setSelectedButton("selectedButton")
+    setIsLoading(true);
+    setTimeout(() => {
+      const filteredProjects = projectsData.filter(
+        (project) => project.type === "frontend"
+      );
+      setPintArray(filteredProjects);
+      setIsLoading(false);
+    }, 500);
   };
 
   const changedProjectsBack = () => {
-    const filteredProjects = projectsData.filter(
-      (project) => project.type === "backend"
-    );
-    setPintArray(filteredProjects);
+    setIsLoading(true);
+    setTimeout(() => {
+      const filteredProjects = projectsData.filter(
+        (project) => project.type === "backend"
+      );
+      setPintArray(filteredProjects);
+      setIsLoading(false);
+    }, 500);
   };
 
   return (
@@ -76,6 +88,11 @@ const Projects = () => {
         </button>
       </div>
 
+      {isLoading ? (
+      <div className="container-loading">
+        <Loading />
+      </div>
+      ) : (      
       <div className="container-projects">
         {pintArray.map((project) => (
           <CardProjects
@@ -89,7 +106,9 @@ const Projects = () => {
             key={uuidv4()}
           />
         ))}
-      </div>
+      </div>)}
+
+
     </main>
   );
 };

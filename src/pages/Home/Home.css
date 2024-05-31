@@ -3,11 +3,13 @@
   width: 50%;
   display: flex;
   gap: 1rem;
+  animation: leftContent 0.5s ease-out forwards;
 }
 
 .container-image {
   /* border: 1px solid yellow; */
   width: 50%;
+  animation: rightContent 0.5s ease-out forwards;
 }
 
 .container-image img {

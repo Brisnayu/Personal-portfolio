@@ -34,8 +34,6 @@ const CardProjects = ({
 
       <p>{description}</p>
 
-
-
       <div className="style-links">
         <a href={link} target="_blank" title={link}>
           <img src="/links/link.png" alt="link" />

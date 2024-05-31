@@ -3,8 +3,6 @@ import "./ChangeTheme.css";
 
 const ChangeTheme = () => {
     const [light, setLight] = useState<boolean>(false);
-    // Cada vez que cambio de página, se está ejecutando esta función!
-    // Corregir  para evitar el doble click!
   
     console.log(light);
   

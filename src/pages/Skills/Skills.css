@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  animation: zoomIn 0.5s ease-out forwards;
 }
 
 .card-skill {
@@ -50,12 +51,4 @@
   .container-page-skills {
     margin-top: 5rem;
   }
-
-  /* .card-skill {
-    font-size: 1.1rem;
-  }
-
-  .card-skill > img {
-    width: 10%;
-  } */
 }

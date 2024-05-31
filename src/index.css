@@ -34,14 +34,6 @@ h1 {
   font-family: var(--title);
   color: var(--color-first);
   font-size: 4rem;
-  /* background-color: var(--color-third);
-  position: absolute;
-  top: 12%;
-  left: -10%;
-  z-index: 3;
-  padding: 1rem;
-  
-  border-radius: 50px; */
 }
 
 .light {
@@ -56,23 +48,6 @@ h1 {
   --color-text: black;
   --color-github: rgb(199, 199, 199);
 }
-
-/* h1::before {
-  content: "";
-  background-image: url(/background-pattern.png);
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-size: 10rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  opacity: 5%;
-  height: 100%;
-  border-radius: 50px;
-} */
 
 h2 {
   font-size: 2.5rem;
@@ -136,6 +111,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1.8rem;
+  animation: showContent 0.5s ease-out forwards;
 }
 
 footer {
@@ -145,6 +121,48 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95); 
+    opacity: 0; 
+  }
+  to {
+    transform: scale(1); 
+    opacity: 1; 
+  }
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leftContent {
+  0% {
+    transform: translateX(-100%); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes rightContent {
+  0% {
+    transform: translateX(100%); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0); 
+    opacity: 1; 
+  }
 }
 
 ::-webkit-scrollbar {
